@@ -1,0 +1,21 @@
+name: Build and test
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test mission logic
+        run: |
+          python3 tools/export_arduino.py --check
+          g++ -std=c++11 -Wall -Wextra -Werror -Iinclude test/test_mission.cpp -o /tmp/test-mission
+          /tmp/test-mission
+      - name: Install build tools
+        run: pip install platformio==6.2.0
+      - name: Build ESP32 firmware
+        run: pio run -e esp32dev
