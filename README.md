@@ -19,7 +19,7 @@ The controller operates the ground vehicle only. Drone flight, aerial positionin
 - Stops after three distinct GPS fixes report at least 20 m displacement from the origin.
 - Latches a fault on GPS loss, an implausible position jump, drive timeout, or `STOP`.
 
-**Validation status:** software reconstruction with host tests and an ESP32 build workflow. Hardware operation, mechanical release, stopping distance, and outdoor GPS performance require measurement. See [validation](docs/validation.md) for the actual checks and acceptance procedure.
+**Validation status:** 17 host mission scenarios and geodesy checks passed locally and on GitHub; ESP32 firmware compilation passed in [GitHub Actions](https://github.com/rashwan26/airdrop-ugv/actions/runs/44790336348). Hardware operation, mechanical release, stopping distance, and outdoor GPS performance require measurement. See [validation](docs/validation.md) for the actual checks and acceptance procedure.
 
 ## Hardware
 

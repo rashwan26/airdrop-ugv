@@ -11,7 +11,11 @@ Local ESP32 build: NOT COMPLETED.
 The toolchain installation ran out of disk space. Temporary failed toolchain
 downloads were removed. This does not establish target compilation success.
 
-ESP32 CI build: PENDING publication and GitHub Actions execution.
+ESP32 CI build: PASS on GitHub Actions.
+Run: https://github.com/rashwan26/airdrop-ugv/actions/runs/44790336348
+Source commit: 15ffd3b7d768c9b6afbb5c5c6349d8e7b3ded569
+Environment: esp32dev / espressif32@6.9.0 / Arduino framework.
+Host mission tests and Arduino IDE export synchronization also passed in CI.
 Hardware / flight validation: NOT EXECUTED.
 
 PDF guide: rendered and visually reviewed after generation.
