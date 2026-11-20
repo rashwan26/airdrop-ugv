@@ -1,0 +1,17 @@
+Verification record - 20 November 2026
+
+Host command:
+g++ -std=c++11 -Wall -Wextra -Werror -Iinclude test/test_mission.cpp -o /tmp/test-mission
+/tmp/test-mission
+
+Result: PASS - 17 mission scenarios + geodesy checks passed.
+Compiler: GNU C++ 11 (Linux).
+
+Local ESP32 build: NOT COMPLETED.
+The toolchain installation ran out of disk space. Temporary failed toolchain
+downloads were removed. This does not establish target compilation success.
+
+ESP32 CI build: PENDING publication and GitHub Actions execution.
+Hardware / flight validation: NOT EXECUTED.
+
+PDF guide: rendered and visually reviewed after generation.
